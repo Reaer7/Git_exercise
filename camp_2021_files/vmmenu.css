@@ -1,0 +1,105 @@
+/* CSS Document */
+ ul.vmmenu  {
+   padding: 0;
+   margin: 0;
+   list-style: none;
+   width: 250px;
+   position:relative;
+   
+   
+}
+ul.vmmenu li {
+   float: left;
+   padding-bottom: 2px; 
+}
+ul.vmmenu li a, ul.vmenu li a:visited {
+   display: block;
+   width: 250px;/*249*/
+   height:25px;
+   line-height:25px;
+   text-indent:25px;
+  text-decoration: none; 
+  font-size: 100%;
+	color: #432;
+	border-left: 1px solid #e3dad1;
+	border-top: 1px solid #e3dad1;
+	border-bottom: 1px solid #e3dad1;
+	border-right: 1px solid #e3dad1;
+	margin-left: 10px;
+  background: url(../images/menu-item-bg.png) #f3efec;
+  /*background: #f3efec;*/
+  opacity: 1;
+
+   
+}
+ul.vmmenu li a:hover {
+   color: #036AC0;/*#4682B4;*/
+
+border-color: #d2e3f4;
+background: url(../images/menu-item-bg-over.png);
+  /*background: #f3efec;*/
+outline: 0;
+opacity: 1;   
+}
+ul.vmmenu li.parent {
+background: url(../images/menu-arrow-left.png) center left 4px no-repeat;
+
+}
+ul.vmmenu li ul {
+	visibility: hidden;
+	position: absolute;
+	/*left: 149px;*//*выпадать вправо*/
+	right: 250px;  /*выпадать влево*/
+	top: 0px;
+	list-style: none;
+font-size: 100%;
+  z-index: 1000;
+}
+ul.vmmenu li:hover {
+	position: relative;
+}
+ul.vmmenu li:hover > ul {
+ 	visibility: visible;
+	
+}
+ul.vmmenu li:hover > a {
+   color:#036AC0;/*#4682B4*/;
+/*   background:#FFF;*//*фон выделенног*/
+}
+ul.vmmenu li ul li.current.active a {color:#29719E;font-weight:bold}
+ul.vmmenu li.current.active a {color:#29719E;font-weight:bold;}
+
+ul.vmmenu a:hover ul ul {
+   visibility:hidden;
+}
+ ul.vmmenu a:hover ul a:hover ul ul {
+   visibility:hidden;
+}
+ ul.vmmenu a:hover ul a:hover ul a:hover ul ul{
+   visibility:hidden;
+}
+ ul.vmmenu a:hover ul {
+   visibility:visible;
+}
+ ul.vmmenu a:hover ul a:hover ul{ 
+   visibility:visible;
+}
+ ul.vmmenu a:hover ul a:hover ul a:hover ul { 
+   visibility:visible;
+}
+ ul.vmmenu a:hover ul a:hover ul a:hover ul a:hover ul { 
+   visibility:visible;
+}
+/*.cssmenu table {
+   position:absolute;
+   border-collapse:collapse;
+   top:0;
+   left:0;
+   z-index:100;
+   font-size:1em;
+}
+* html .cssmenu a:hover {
+   color:#4682B4;
+   background:#FFF;
+   position:relative;
+}*/

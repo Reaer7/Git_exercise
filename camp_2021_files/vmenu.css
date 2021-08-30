@@ -1,0 +1,126 @@
+/****************************************************
+         Вертикально-выпадающее меню аккордеон
+*****************************************************/
+ul.vmenu {
+    /*font: bold 14px Arial,Helvetica,sans-serif;*/
+  
+    list-style: none outside none;
+    margin: 0;
+    padding: 0;
+	list-style:none;
+}
+ul.vmenu li {	
+    margin: 0 0 2px;
+}
+ul.vmenu1 li.current {	
+    font-weight: bold;
+}
+
+ul.vmenu li a {
+background: url("../images/vmenu-li-bg.jpg") left bottom repeat-x;    
+    border: 1px solid #D5D5D5;    
+	  -moz-border-radius: 3px;
+    	-o-border-radius: 3px;
+   -webkit-border-radius: 3px;
+	   -ms-border-radius: 3px;
+	       border-radius: 3px;
+    color: #515151;
+    display: block;
+    padding: 5px 8px;
+  
+    text-decoration: none;
+}
+ul.vmenu li > a:hover, ul.vmenu li > a:focus {background-color:transparent}
+ul.vmenu li.parent > a:after {
+	background:url("../images/arrow-dropdown.png") no-repeat;
+	display:block;
+	content:"";
+	float:right;
+	margin:8px 5px 0 0;
+	height:3px;
+	width:6px;
+}
+/* Выпадающие пункты */
+ul.vmenu li:first-child  ul {
+    font-weight: normal;
+    margin: -1px 0 10px 138px;
+	list-style:none;
+}
+ul.vmenu li ul {
+    font-weight: normal;
+    margin: -1px 0 10px -30px;
+	list-style:none;
+}
+ul.vmenu li ul li {
+	background:none;
+	margin:0 0 5px;
+}
+ul.vmenu li ul li a {
+    background: url("../images/vmenu-arrow.png") no-repeat scroll 5px center transparent !important;
+    border: medium none;
+    padding: 0 0 0 15px;
+  font-size: 18px;
+}
+ul.vmenu li ul li a:hover {color:#29719E;text-decoration:underline}
+ul.vmenu li ul li.current.active a {color:#29719E;font-weight:bold}
+ul.vmenu li.current.active a {color:#29719E;font-weight:bold;}
+
+/****************************************************
+         Второй вариант
+*****************************************************/
+ul.vmenu1 {
+    /*font: bold 12px Arial,Helvetica,sans-serif;*/
+  
+    list-style: none outside none;
+    margin: 0;
+    padding: 0;
+	list-style:none;
+}
+ul.vmenu1 li {	
+    margin: 0 0 2px;
+}
+ul.vmenu1 li a {
+background: url("../images/vmenu-li-bg.jpg") left bottom repeat-x;    
+    border: 1px solid #D5D5D5;    
+	  -moz-border-radius: 3px;
+    	-o-border-radius: 3px;
+   -webkit-border-radius: 3px;
+	   -ms-border-radius: 3px;
+	       border-radius: 3px;
+    color: #515151;
+    display: block;
+    padding: 5px 8px;
+  
+    text-decoration: none;
+}
+ul.vmenu1 li > a:hover, ul.vmenu1 li > a:focus {background-color:transparent}
+
+ul.vmenu1 li.parent > a:after {
+	background:url("../images/arrow-dropdown.png") no-repeat;
+	display:block;
+	content:"";
+	float:right;
+	margin:8px 5px 0 0;
+	height:3px;
+	width:6px;
+}
+/* Выпадающие пункты */
+ul.vmenu1 li ul {
+    font-weight: bold;
+    margin: 10px 0 10px 15px;
+	list-style:none;
+}
+ul.vmenu1 li ul li {
+	background:none;
+	margin:0 0 5px;
+}
+ul.vmenu1 li ul li a {
+    background: url("../images/vmenu-arrow.png") no-repeat scroll 5px center transparent !important;
+    border: medium none;
+    padding: 0 0 0 15px;
+ font-size: 18px;
+ 
+}
+ul.vmenu1 li ul li a:hover {color:#29719E;text-decoration:underline;}
+ul.vmenu1 li ul li.current.active a {color:#29719E;font-weight:bold;}
+ul.vmenu1 li.current.active a {color:#29719E;font-weight:bold;}
